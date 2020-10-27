@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 project(CrossSpectrumExample VERSION 1.0.0)
 
-SET(CMAKE_CXX_FLAGS "--std=c++17 -Wall -Wpedantic -Ofast -march=native -mavx2 -g -lm -lfftw3 ") #-static -ftree-vectorize -ffast-math  -funsafe-math-optimizations -lm -lfftw3 -fopt-info-vec-optimized
+SET(CMAKE_CXX_FLAGS "--std=c++17 -Wall -Wpedantic -Ofast -march=native -mavx -m64 -g -lm -lfftw3")
 
 SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../lib)
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
