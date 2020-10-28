@@ -6,6 +6,8 @@ Implementation of cross power spectrum estimation is done using C++ and SIMD int
 
 FFT computations are done using [`fftw3`](http://www.fftw.org//) library, so that must be installed before actually using the code.
 
+**NB!** The code in this repo is just for illustration purposes of how cross power spectrum can be estimated and for showing some optimizations of the critical parts. it is not meant for using in real life production code since some preprocessing parts are left out.
+
 ## Building
 
 Builing can be done using `cmake` in the root directory of the project as follows:
